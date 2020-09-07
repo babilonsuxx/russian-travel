@@ -2,14 +2,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
   gap: 18px;
 }
 
+
 @media screen and (max-width: 530px) {
   .footer__links {
-    flex-direction: column;
+    grid-template-columns: repeat(1, auto);
     gap: 32px;
   }
 }
